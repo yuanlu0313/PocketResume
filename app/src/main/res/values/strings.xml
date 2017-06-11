@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PocketResume</string>
+    <string name="education_title">education</string>
+    <string name="experience_title">experience</string>
+    <string name="project_title">project</string>
+    <string name="user_picture">User Picture</string>
+    <string name="edit_info">Edit User Information</string>
+    <string name="add_education">Add Education</string>
+    <string name="edit_education">Edit Education</string>
+    <string name="add_project">Add Project</string>
+    <string name="edit_project">Edit Project</string>
+    <string name="add_experience">Add Experience</string>
+    <string name="edit_experience">Edit Experience</string>
+    <string name="hint_school">School</string>
+    <string name="hint_company">Company</string>
+    <string name="hint_project_name">Project name</string>
+    <string name="hint_major">Major</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_start_date">Start date</string>
+    <string name="hint_end_date">End date</string>
+    <string name="hint_courses">Courses</string>
+    <string name="hint_tasks">What did you do</string>
+    <string name="hint_details">Details</string>
+    <string name="edit_save">Save</string>
+
+</resources>

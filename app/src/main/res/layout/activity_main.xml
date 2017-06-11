@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.yl.yuanlu.pocketresume.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_medium"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/user_picture"
+                android:layout_width="@dimen/user_picture_size"
+                android:layout_height="@dimen/user_picture_size"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/spacing_small"
+                android:src="@drawable/user_pic_ghost"
+                android:contentDescription="@string/user_picture"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/spacing_xsmall"
+                android:layout_toRightOf="@+id/user_picture"
+                android:layout_toLeftOf="@+id/edit_user_info"
+                tools:text="Your Name"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/user_picture"
+                android:layout_toLeftOf="@+id/edit_user_info"
+                android:layout_below="@id/name"
+                tools:text="Your Email"/>
+
+            <ImageButton
+                android:id="@+id/edit_user_info"
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="@dimen/spacing_large"
+                android:src="@drawable/ic_edit_black_18dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/spacing_xsmall"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/edit_info"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:layout_marginBottom="@dimen/spacing_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/add_education_btn"
+                android:textAllCaps="true"
+                android:textSize="25sp"
+                android:text="@string/education_title"/>
+
+            <ImageButton
+                android:id="@+id/add_education_btn"
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="@dimen/spacing_large"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_add_black_18dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/add_education"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/education_list"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_marginBottom="@dimen/spacing_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/add_experience_btn"
+                android:textAllCaps="true"
+                android:textSize="25sp"
+                android:text="@string/experience_title"/>
+
+            <ImageButton
+                android:id="@+id/add_experience_btn"
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="@dimen/spacing_large"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_add_black_18dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/add_experience"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/experience_list"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_marginBottom="@dimen/spacing_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/add_project_btn"
+                android:textAllCaps="true"
+                android:textSize="25sp"
+                android:text="@string/project_title"/>
+
+            <ImageButton
+                android:id="@+id/add_project_btn"
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="@dimen/spacing_large"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_add_black_18dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/add_project"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/project_list"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

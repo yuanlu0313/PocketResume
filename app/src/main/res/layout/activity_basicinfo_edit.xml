@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/basicinfo_edit_user_picture_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="?attr/selectableItemBackground">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/user_picture_chooser_background"/>
+
+        <ImageView
+            android:id="@+id/basicinfo_edit_user_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/user_pic_ghost"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/user_picture"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_camera_alt_white_24dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/spacing_small"
+            android:layout_marginRight="@dimen/spacing_small"/>
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/basicinfo_edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_marginRight="@dimen/spacing_medium"
+        android:hint="Your name"/>
+
+    <EditText
+        android:id="@+id/basicinfo_edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_marginRight="@dimen/spacing_medium"
+        android:hint="Your email"/>
+
+</LinearLayout>
